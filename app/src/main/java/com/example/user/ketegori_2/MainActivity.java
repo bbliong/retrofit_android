@@ -133,7 +133,7 @@ public class MainActivity extends AppCompatActivity {
 
                 @Override
                 public void onFailure(Call<List<ScholarshipsResponse>> call, Throwable t) {
-                    Log.d("error", t.getMessage());
+
                     Toast.makeText(MainActivity.this, "error fetching data", Toast.LENGTH_SHORT).show();
                     pd.hide();
                 }

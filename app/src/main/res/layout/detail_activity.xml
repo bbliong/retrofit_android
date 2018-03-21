@@ -17,9 +17,9 @@
         android:scaleType="fitXY"
         android:id="@+id/thumb_single"
         android:background="@color/icons"
-        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
 
     <TextView
         android:id="@+id/judul_single"
@@ -52,7 +52,35 @@
         android:text="oleh HACKTIV 8"
         android:paddingLeft="20dp"
         android:paddingTop="5dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/buat_single">
 
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:fitsSystemWindows="true"
+            android:scaleType="fitXY"
+            android:id="@+id/a12"
+            android:background="@color/icons"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/student_male_528px"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:fitsSystemWindows="true"
+            android:scaleType="fitXY"
+            android:id="@+id/a123"
+            android:background="@color/icons"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/a12"
+            android:src="@drawable/student_male_528px"/>
+
+    </RelativeLayout>
 
 
 </RelativeLayout>
