@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:elevation="3dp"
+        card_view:cardCornerRadius="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/thumbnail"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_alignParentLeft="true"
+
+                android:clickable="true"
+                android:scaleType="fitXY"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/img"/>
+
+            <TextView
+                android:id="@+id/judul_item"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/album_title"
+                android:textSize="@dimen/title"
+                android:textStyle=""
+                android:text="HACTIV SCHPOLARSHIP ADASDASDA"
+                android:fontFamily="sans-serif-smallcaps"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/thumbnail"
+                android:layout_toEndOf="@+id/thumbnail"
+                android:layout_alignTop="@+id/thumbnail" />
+
+            <TextView
+                android:id="@+id/tahun_item"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/judul_item"
+                android:layout_toEndOf="@+id/thumbnail"
+                android:layout_toRightOf="@+id/thumbnail"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/album_title"
+                android:textSize="@dimen/title_padding"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"
+                android:text="lalalallalalala"/>
+
+            <TextView
+                android:id="@+id/konten_item"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/tahun_item"
+                android:textColor="@color/album_title"
+                android:textSize="@dimen/title_padding"
+                android:layout_toRightOf="@+id/thumbnail"
+                android:layout_toEndOf="@+id/thumbnail"
+                android:maxLines="3"
+                android:maxLength="50"
+                android:fontFamily="sans-serif"
+                android:text="androind androind androind androind androind androind androind androind androind androind androind androind androindandroind androind androind androind androind androind  "/>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>
